@@ -1,0 +1,164 @@
+/* Reset */ *{outline: 0;margin: 0;padding: 0;border: 0;box-sizing:border-box;font-family: 'Open Sans'}/* ------- */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/src/OpenSans-Light.ttf');} /* <-- Isso não era necessário. Foi só um treino de importação de fonte. */
+
+:root{
+    --cortema1:#212343;
+    --cortema2:#212343bd;
+    --cortema3:#8024a9;
+}
+
+header{
+    height: 60px;
+    background-color: var(--cortema1);
+    padding: 0 2%;
+    align-content: center;
+}
+
+h1{
+    font-weight: bold;
+}
+
+/* inicio Section */
+
+.inicio{
+    height: 85vh;
+    width: 100%;
+    padding: 2%;
+    background-image: url(/src/header_bg.webp);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+}
+
+.inicio .lista{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2%;
+    height: min-content;
+    width: 45%;
+    background-color: var(--cortema2);
+    color: white;
+    font-size: 15px;
+}
+
+/* Formulario */
+
+.formulario{
+    overflow-y: auto;
+    background-color: white;
+    width: 400px;
+    height: 120%;
+    border: 8px solid rgba(128, 128, 128, 0.39);
+    margin-left: auto;
+    padding: 1.5%;
+    background-clip: padding-box;
+    color: #bbb;
+    font-weight: bold;
+}
+
+.formulario h2{
+	font-weight: 500;
+	font-size: 21px;
+}
+
+.formulario form input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #bbb;
+}
+
+form h3{
+    margin: 5% 0 1%;
+}
+
+.formulario p{
+	margin: 15% 0;
+}/* Campos obrigatórios */
+
+.formulario > input[type=submit]{
+	cursor: pointer;
+	color: white;
+	font-size: 25px;
+	width: 100%;
+	height: 50px;
+	background-color: #363a6d;
+}
+
+/* Sobre Section */
+
+.sobre{
+    justify-items: center;
+    padding: 50px;
+    background-color: #ccc;
+}
+
+.sobre p{
+    width: 65%;
+    margin: 20px 0 0;
+	text-align: justify;
+}
+
+.sobre img{
+	position: relative;
+	top: 70px;
+	width: 40px;
+}
+
+/* Vantagens Section */
+
+.vantagens{
+    text-align: center;
+    padding: 2%;
+}
+
+.vantagens h1{
+    margin: 30px 0 100px;
+    color: var(--cortema3);
+	font-size: 30px;
+}
+
+.vantagens .box-vantagens{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.vantagens .box-vantagens > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 10px auto;
+    width: 350px;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    margin: 10px 0 0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cortema1);
+    letter-spacing: 1px;
+    color: white;
+  }
+  
+  footer i{
+    padding:5px;
+    border-radius: 50%;
+    color: white;
+  }
+  
+  footer i:hover{
+    background-color: white;
+    color: black;
+  }
+
+  @media screen and (max-width: 700px){footer{flex-direction:column;}}

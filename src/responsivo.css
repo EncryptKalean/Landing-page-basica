@@ -1,0 +1,21 @@
+@media screen and (max-width: 900px){
+    header{text-align: center;}
+
+    .inicio{
+        display: block;
+        height: 100%;
+    }
+
+    .formulario, .inicio .lista{
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .sobre p{
+        width: 100%;
+    }
+
+    .vantagens .box-vantagens > div{
+        margin: 50px auto;
+    }
+}
