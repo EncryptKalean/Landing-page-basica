@@ -144,6 +144,7 @@ footer{
     display: flex;
     margin: 10px 0 0;
     justify-content: space-around;
+    padding: 5px;
     align-items: center;
     background-color: var(--cortema1);
     letter-spacing: 1px;
@@ -153,6 +154,7 @@ footer{
   footer i{
     padding:5px;
     border-radius: 50%;
+    font-size: 25px;
     color: white;
   }
   
